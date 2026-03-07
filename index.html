@@ -5,49 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chatbot BTS BioALC</title>
 <style>
-  body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
   }
-  header{
-    background:#c62828;
-    color:white;
-    padding:15px;
-    text-align:center;
-    font-size:22px;
-    font-weight:bold;
+  .chat-container {
+    width: 100%;
+    height: 90vh; /* prend presque toute la hauteur */
+    max-height: 800px;
   }
-  .sub{
-    text-align:center;
-    padding:10px;
-    font-size:16px;
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
-  .chat-container{
-    width:100%;
-    height:80vh;
-    max-height:700px;
-  }
-  iframe{
-    width:100%;
-    height:100%;
-    border:none;
-  }
-  @media (max-width:768px){
-    .chat-container{
-      height:70vh;
+  @media (max-width: 768px){
+    .chat-container {
+      height: 80vh; /* un peu moins sur mobile */
     }
   }
 </style>
 </head>
 <body>
 
-<header>Chatbot BTS BioALC</header>
-
-<div class="sub">Réponses à vos questions sur la formation</div>
-
 <div class="chat-container">
-  <iframe id="chatbot" src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P"></iframe>
+  <iframe src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P"></iframe>
 </div>
 
 </body>
