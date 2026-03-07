@@ -33,17 +33,6 @@
     height:100%;
     border:none;
   }
-  .fullscreen{
-    display:block;
-    margin:10px auto;
-    padding:10px 20px;
-    background:#c62828;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-  }
   @media (max-width:768px){
     .chat-container{
       height:70vh;
@@ -57,17 +46,9 @@
 
 <div class="sub">Réponses à vos questions sur la formation</div>
 
-<button class="fullscreen" onclick="openFull()">Ouvrir en plein écran</button>
-
 <div class="chat-container">
   <iframe id="chatbot" src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P"></iframe>
 </div>
-
-<script>
-function openFull(){
-  window.open("https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P","_blank");
-}
-</script>
 
 </body>
 </html>
