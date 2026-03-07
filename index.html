@@ -2,36 +2,32 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chatbot BTS BioALC</title>
 <style>
-  body {
+  html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f5f5;
   }
   .chat-container {
     width: 100%;
-    height: 90vh; /* prend presque toute la hauteur */
-    max-height: 800px;
+    height: 100%; /* prend tout l'espace visible */
   }
   iframe {
     width: 100%;
     height: 100%;
     border: none;
   }
-  @media (max-width: 768px){
-    .chat-container {
-      height: 80vh; /* un peu moins sur mobile */
-    }
-  }
 </style>
 </head>
 <body>
-
-<div class="chat-container">
-  <iframe src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P"></iframe>
-</div>
-
+  <div class="chat-container">
+    <iframe src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P" id="chatbot"></iframe>
+  </div>
 </body>
 </html>
