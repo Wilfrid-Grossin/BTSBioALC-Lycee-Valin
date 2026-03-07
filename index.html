@@ -38,7 +38,7 @@ iframe {
   font-weight:bold;
   z-index:10000;
   pointer-events:none;
-  white-space: nowrap; /* texte sur une ligne */
+  white-space: nowrap;
 }
 
 /* Popup rond clignotant */
@@ -109,7 +109,7 @@ iframe {
   .popup-label {
     font-size:18px;
     top: calc(50% - 200px);
-    white-space: nowrap; /* texte sur une ligne */
+    white-space: nowrap;
     padding:8px 15px;
   }
 }
@@ -151,51 +151,76 @@ document.addEventListener("DOMContentLoaded", function() {
   const popup = document.getElementById("popup");
   const label = document.getElementById("popupLabel");
 
-  // Disparition automatique après 5 secondes
-  setTimeout(()=> {
-    popup.remove();
-    label.remove();
-  }, 5000);
-
-  const colors = ["#ff1744","#f50057","#ff9100","#00e676","#2979ff"];
-  const icons = ["🧬","⚗️","🧪","🔬"];
-  let particles = [];
-
-  function createParticle() {
-    const elem = document.createElement("div");
-    if(Math.random()<0.3){
-      elem.className="icon";
-      elem.textContent=icons[Math.floor(Math.random()*icons.length)];
-      elem.style.fontSize=`${14+Math.random()*16}px`;
-    } else {
-      elem.className="bubble";
-      const size=8+Math.random()*12;
-      elem.style.width=size+"px";
-      elem.style.height=size+"px";
-      elem.style.background=colors[Math.floor(Math.random()*colors.length)];
-      elem.style.borderRadius="50%";
-    }
-
-    // position aléatoire autour du centre
-    const angle=Math.random()*2*Math.PI;
-    const radius=100+Math.random()*120;
-    elem.style.left=`calc(50% + ${Math.cos(angle)*radius}px)`;
-    elem.style.top=`calc(50% + ${Math.sin(angle)*radius}px)`;
-    document.body.appendChild(elem);
-    particles.push(elem);
-
-    const duration=2500+Math.random()*1500;
-    elem.animate([
-      { transform:"translateY(0) scale(1)", opacity:1 },
-      { transform:`translateY(-${20+Math.random()*50}px) scale(0.5)`, opacity:0 }
-    ], {duration:duration, iterations:1, easing:"ease-out"});
-
-    setTimeout(()=> elem.remove(), duration);
+  // Fonction pour gérer les cookies
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
   }
 
-  for(let i=0;i<15;i++) createParticle();
-  let interval = setInterval(createParticle, 300);
-  setTimeout(()=> clearInterval(interval), 5000);
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+
+  // Vérifier si le cookie existe déjà
+  if(!getCookie("popup_seen")) {
+    // Afficher le popup
+    popup.style.display = "flex";
+    label.style.display = "block";
+
+    // Disparition automatique après 5 secondes
+    setTimeout(() => {
+      popup.remove();
+      label.remove();
+    }, 5000);
+
+    const colors = ["#ff1744","#f50057","#ff9100","#00e676","#2979ff"];
+    const icons = ["🧬","⚗️","🧪","🔬"];
+    let particles = [];
+
+    function createParticle() {
+      const elem = document.createElement("div");
+      if(Math.random()<0.3){
+        elem.className="icon";
+        elem.textContent=icons[Math.floor(Math.random()*icons.length)];
+        elem.style.fontSize=`${14+Math.random()*16}px`;
+      } else {
+        elem.className="bubble";
+        const size=8+Math.random()*12;
+        elem.style.width=size+"px";
+        elem.style.height=size+"px";
+        elem.style.background=colors[Math.floor(Math.random()*colors.length)];
+        elem.style.borderRadius="50%";
+      }
+
+      const angle=Math.random()*2*Math.PI;
+      const radius=100+Math.random()*120;
+      elem.style.left=`calc(50% + ${Math.cos(angle)*radius}px)`;
+      elem.style.top=`calc(50% + ${Math.sin(angle)*radius}px)`;
+      document.body.appendChild(elem);
+      particles.push(elem);
+
+      const duration=2500+Math.random()*1500;
+      elem.animate([
+        { transform:"translateY(0) scale(1)", opacity:1 },
+        { transform:`translateY(-${20+Math.random()*50}px) scale(0.5)`, opacity:0 }
+      ], {duration:duration, iterations:1, easing:"ease-out"});
+
+      setTimeout(()=> elem.remove(), duration);
+    }
+
+    for(let i=0;i<15;i++) createParticle();
+    let interval = setInterval(createParticle, 300);
+    setTimeout(()=> clearInterval(interval), 5000);
+
+    // Créer le cookie pour 30 jours
+    setCookie("popup_seen", "true", 30);
+  } else {
+    // Si cookie présent, masquer le popup
+    popup.style.display = "none";
+    label.style.display = "none";
+  }
 });
 </script>
 
