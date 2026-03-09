@@ -128,27 +128,32 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
-<div id="visitorCounter">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=wilfrid-grossin.chatbot-BTSBioALC&left_text=&right_text=&color=red" alt="visites">
+<div id="visitorBadge">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=wilfrid-grossin.BTSBioALC-Lycee-Valin&left_text=&right_text=">
 </div>
 
 <style>
-#visitorCounter{
+#visitorBadge{
   position:fixed;
-  top:6px;
-  left:6px;
-  background:rgba(0,0,0,0.55);
-  padding:4px 6px;
-  border-radius:6px;
+  bottom:75px;      /* position au-dessus du bouton envoyer */
+  right:20px;
+  background:white;
+  border-radius:20px;
+  padding:3px 8px;
+  font-size:11px;
   z-index:9999;
+  box-shadow:0 2px 8px rgba(0,0,0,0.25);
+  opacity:0.9;
 }
 
-#visitorCounter img{
-  height:18px;
+#visitorBadge img{
+  height:16px;
   display:block;
 }
 </style>
+</style>
 </body>
 </html>
+
 
 
