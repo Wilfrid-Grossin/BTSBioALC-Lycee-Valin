@@ -10,9 +10,71 @@
 
 <meta name="description" content="BTS Bioanalyses en Laboratoire de Contrôle à La Rochelle (Lycée Valin). Ressources pédagogiques, supports de formation et outils interactifs pour étudiants et enseignants.">
 
+<meta name="keywords" content="BTS Bioanalyses La Rochelle, BTS BioALC lycée Valin, formation laboratoire, biochimie, microbiologie">
+
+<meta name="author" content="Wilfrid Grossin">
+
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/">
+
+<meta name="google-site-verification" content="GmjGARVAHgQ_L7agiH0gtsNtwFTHoZ6bYkPtfTR2J6Q">
+
+<!-- Open Graph -->
+<meta property="og:title" content="BTS Bioanalyses en Laboratoire de Contrôle – Lycée Valin">
+<meta property="og:description" content="Plateforme pédagogique avec ressources et outils interactifs pour le BTS BioALC à La Rochelle.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/">
+<meta property="og:image" content="https://www.lycee-valin.fr/RJVALIN/wp-content/uploads/2026/03/image-3.png">
+
+<!-- Schema Education -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "CollegeOrUniversity",
+ "name": "BTS Bioanalyses en Laboratoire de Contrôle – Lycée Valin",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "La Rochelle",
+   "addressCountry": "FR"
+ },
+ "url": "https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/"
+}
+</script>
+
+<!-- FAQ SEO -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+   {
+     "@type": "Question",
+     "name": "Qu'est-ce que le BTS Bioanalyses en Laboratoire de Contrôle ?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Le BTS Bioanalyses en Laboratoire de Contrôle forme des techniciens spécialisés dans les analyses biologiques et le contrôle qualité en laboratoire."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Où suivre le BTS BioALC à La Rochelle ?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Le BTS Bioanalyses en Laboratoire de Contrôle est proposé au lycée Valin à La Rochelle."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Que propose cette plateforme ?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "La plateforme propose des ressources pédagogiques, des supports de formation et des outils interactifs pour les étudiants et enseignants."
+     }
+   }
+ ]
+}
+</script>
 
 <style>
 body {
@@ -20,10 +82,6 @@ body {
   text-align: center;
   padding: 40px;
   margin: 0;
-}
-
-h1 {
-  color: #1a1a1a;
 }
 
 a.button {
@@ -34,23 +92,54 @@ a.button {
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 16px;
 }
 
 .chat-container {
-  width: 100%;
-  height: 500px;
-  margin-top: 40px;
+  width:100%;
+  height:500px;
+  margin-top:40px;
 }
 
 iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* Popup styles conservés */
+.popup-label {
+position: fixed;
+top: calc(50% - 180px);
+left:50%;
+transform: translateX(-50%);
+background: rgba(0,0,0,0.7);
+color:white;
+padding:10px 18px;
+border-radius:12px;
+font-weight:bold;
+z-index:10000;
+pointer-events:none;
+}
+
+.popup {
+position: fixed;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+background:#c62828;
+color:white;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+z-index:9999;
+padding:15px;
 }
 </style>
 
-<!-- Redirection douce (SEO compatible) -->
+<!-- Redirection douce -->
 <script>
 setTimeout(function(){
   window.location.href = "https://3rb-esst.my.canva.site/";
@@ -64,15 +153,11 @@ setTimeout(function(){
 <h1>BTS Bioanalyses en Laboratoire de Contrôle à La Rochelle (Lycée Valin)</h1>
 
 <p>
-Découvrez le <strong>BTS Bioanalyses en Laboratoire de Contrôle à La Rochelle</strong>, une formation scientifique en <strong>biochimie, microbiologie et contrôle qualité</strong> proposée au lycée Valin.
+Découvrez le <strong>BTS Bioanalyses en Laboratoire de Contrôle</strong>, une formation scientifique en biochimie, microbiologie et contrôle qualité proposée au lycée Valin.
 </p>
 
 <p>
-Accédez à des <strong>ressources pédagogiques, supports de formation et outils interactifs</strong> pour accompagner les étudiants tout au long de leur parcours.
-</p>
-
-<p>
-Une plateforme dédiée pour mieux comprendre la formation, ses contenus et ses débouchés dans les métiers du laboratoire.
+Accédez à des <strong>ressources pédagogiques, supports de formation et outils interactifs</strong> pour accompagner les étudiants et enseignants.
 </p>
 
 <a class="button" href="https://3rb-esst.my.canva.site/" target="_blank">
@@ -83,16 +168,72 @@ Accéder aux ressources du BTS BioALC
 Chargement de la plateforme interactive…
 </p>
 
-<!-- Chatbot conservé -->
+<!-- Chatbot -->
 <div class="chat-container">
 <iframe src="https://chatmd.forge.apps.education.fr//#https://codimd.apps.education.fr/s/0wMcu4T8P"></iframe>
 </div>
 
-<!-- TON SCRIPT POPUP (à coller tel quel) -->
+<!-- Popup -->
+<div class="popup-label" id="popupLabel">Popup de 5 secondes</div>
+
+<div class="popup" id="popup">
+<img src="https://www.lycee-valin.fr/RJVALIN/wp-content/uploads/2026/03/image-3.png" style="width:120px;height:120px;border-radius:50%;">
+<div>Découvrir le BTS BioALC</div>
+</div>
+
+<!-- TON SCRIPT COMPLET -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-/* colle ici ton script popup EXACT sans modification */
+if (window.matchMedia("(max-width: 768px)").matches) {
+document.getElementById("popup")?.remove();
+document.getElementById("popupLabel")?.remove();
+return;
+}
+
+const popup = document.getElementById("popup");
+const label = document.getElementById("popupLabel");
+
+function setCookie(name, value, days) {
+const d = new Date();
+d.setTime(d.getTime() + (days*24*60*60*1000));
+document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+}
+
+function getCookie(name) {
+const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+return match ? match[2] : null;
+}
+
+const probability = 0.3;
+const minDays = 2;
+const lastSeen = getCookie("popup_last");
+const now = Date.now();
+
+let showPopup = false;
+
+if (!lastSeen) {
+showPopup = true;
+} else if (now - lastSeen > minDays*24*60*60*1000) {
+showPopup = Math.random() < probability;
+}
+
+if (showPopup) {
+
+popup.style.display = "flex";
+label.style.display = "block";
+
+setTimeout(() => {
+popup.remove();
+label.remove();
+}, 5000);
+
+setCookie("popup_last", now, 30);
+
+} else {
+popup.style.display = "none";
+label.style.display = "none";
+}
 
 });
 </script>
