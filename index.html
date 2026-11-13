@@ -1,73 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Correction des devoirs Moodle : annoter les copies PDF au stylet et les rendre en lot | Appli gratuite</title>
-<meta name="description" content="Appli gratuite pour corriger les devoirs Moodle : fusion des rendus en PDF, annotation au stylet sur tablette, tampons, retour des copies corrigées dans Moodle en lot, récapitulatif PDF et CSV. Respect du RGPD, 4 langues, commun numérique sous licence CC BY-NC-SA.">
-<meta name="keywords" content="correction devoirs Moodle, annotation PDF, stylet, tablette, tampons de correction, retour Moodle en lot, copies corrigées, récapitulatif PDF CSV, RGPD, commun numérique, CC BY-NC-SA, biotechnologies, enseignant">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BTS BioALC / BTS Bioanalyses en Laboratoire de Contrôle La Rochelle | Lycée Valin</title>
+
+<meta name="description" content="BTS BioALC / BTS Bioanalyses en Laboratoire de Contrôle à La Rochelle (Lycée Valin). Ressources pédagogiques et outils interactifs pour étudiants et enseignants.">
+
+<meta name="keywords" content="BTS Bioanalyses en Laboratoire de Contrôle La Rochelle, BTS BioALC lycée Valin, formation laboratoire">
+
 <meta name="author" content="Wilfrid Grossin">
+
 <meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/">
+
+<meta name="google-site-verification" content="GmjGARVAHgQ_L7agiH0gtsNtwFTHoZ6bYkPtfTR2J6Q">
+
+<!-- Open Graph -->
+<meta property="og:title" content="BTS BioALC / Bioanalyses en Laboratoire de Contrôle – Lycée Valin">
+<meta property="og:description" content="Plateforme pédagogique avec ressources et outils interactifs pour le BTS BioALC à La Rochelle.">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Des devoirs rendus aux copies corrigées : l'appli de correction Moodle">
-<meta property="og:description" content="Fusionnez les rendus Moodle, annotez les copies au stylet, rendez-les en lot dans Moodle. Gratuit, sans inscription, respectueux du RGPD.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Des devoirs rendus aux copies corrigées : l'appli de correction Moodle">
-<meta name="twitter:description" content="Annotez au stylet les devoirs rendus sur Moodle et renvoyez les copies corrigées en lot. Gratuit et respectueux du RGPD.">
+<meta property="og:url" content="https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/">
+<meta property="og:image" content="https://www.lycee-valin.fr/RJVALIN/wp-content/uploads/2026/03/image-3.png">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "CollegeOrUniversity",
+ "name": "BTS BioALC / BTS Bioanalyses en Laboratoire de Contrôle – Lycée Valin",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "La Rochelle",
+   "addressCountry": "FR"
+ },
+ "url": "https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/"
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c7be5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.popup-label {
+position: fixed;
+top: calc(50% - 180px);
+left:50%;
+transform: translateX(-50%);
+background: rgba(0,0,0,0.7);
+color:white;
+padding:10px 18px;
+border-radius:12px;
+font-weight:bold;
+z-index:10000;
+pointer-events:none;
+}
+
+.popup {
+position: fixed;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+background:#c62828;
+color:white;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+z-index:9999;
+padding:15px;
+}
+</style>
+
+<!-- ✅ REDIRECTION VERS TON CHATBOT -->
+<script>
+setTimeout(function(){
+  window.location.href = "https://wilfrid-grossin.github.io/chatbot-BTSBioALC/";
+}, 6000);
+</script>
+
 </head>
-<body style="margin:0;background:#f7f8fb;color:#1b2333;font:17px/1.6 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
-<main style="max-width:860px;margin:0 auto;padding:40px 16px 56px">
-<header>
-<h1 style="font-size:2rem;line-height:1.25;margin:0 0 12px">Des devoirs rendus aux copies corrigées</h1>
-<p style="font-size:1.15rem;color:#55607a">L'appli gratuite pour corriger les devoirs Moodle : fusionnez les rendus des élèves en PDF, annotez-les au stylet sur tablette, puis renvoyez toutes les copies corrigées dans Moodle en une seule fois.</p>
-<a style="display:inline-block;margin:20px 0 8px;padding:16px 32px;border-radius:12px;background:#1f5fbf;color:#fff;font-size:1.2rem;font-weight:700;text-decoration:none" href="https://grossinwilfrid.forge.apps.education.fr/fusion-rendus-moodle/">Ouvrir l'appli</a>
-<p style="font-size:.9rem;color:#55607a">Sans inscription, sans installation : elle s'ouvre dans le navigateur, sur ordinateur comme sur tablette.</p>
-</header>
 
-<section>
-<h2 style="font-size:1.3rem;margin:40px 0 12px">Ce que fait l'appli</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Fusion des rendus Moodle</h3><p style="margin:0;color:#55607a;font-size:.95rem">Déposez l'archive des devoirs téléchargée depuis Moodle : les copies des élèves sont rassemblées automatiquement en PDF.</p></div>
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Annotation PDF au stylet</h3><p style="margin:0;color:#55607a;font-size:.95rem">Corrigez directement sur la copie, au stylet sur tablette, comme sur papier.</p></div>
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Tampons de correction</h3><p style="margin:0;color:#55607a;font-size:.95rem">Posez en un geste vos appréciations récurrentes et gagnez du temps sur chaque copie.</p></div>
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Retour Moodle en lot</h3><p style="margin:0;color:#55607a;font-size:.95rem">Obtenez l'archive des copies corrigées, prête à déposer dans Moodle : chaque élève retrouve sa copie annotée.</p></div>
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Récapitulatif PDF et CSV</h3><p style="margin:0;color:#55607a;font-size:.95rem">Exportez un récapitulatif de la correction, en PDF pour l'archivage ou en CSV pour un tableur.</p></div>
-<div style="background:#fff;border:1px solid #e2e6ef;border-radius:12px;padding:16px"><h3 style="font-size:1.05rem;margin:0 0 6px">Tout faire en un clic</h3><p style="margin:0;color:#55607a;font-size:.95rem">Un seul bouton enchaîne les étapes, avec un aperçu des copies et des réglages d'export.</p></div>
+<body>
+
+<h1>BTS BioALC / BTS Bioanalyses en Laboratoire de Contrôle à La Rochelle (Lycée Valin)</h1>
+
+<p>
+Découvrez le <strong>BTS BioALC / BTS Bioanalyses en Laboratoire de Contrôle au lycée Valin à La Rochelle</strong>, une formation scientifique en biochimie, microbiologie et contrôle qualité proposée au lycée Valin.
+</p>
+
+<p>
+Accédez à des <strong>ressources pédagogiques et outils interactifs</strong> pour accompagner les étudiants et enseignants.
+</p>
+
+<a class="button" href="https://wilfrid-grossin.github.io/chatbot-BTSBioALC/" target="_blank">
+Accéder à la plateforme interactive
+</a>
+
+<p style="margin-top:20px;color:gray;">
+Redirection automatique en cours...
+</p>
+
+<!-- Popup -->
+<div class="popup-label" id="popupLabel">Découverte du BTS</div>
+
+<div class="popup" id="popup">
+<img src="https://www.lycee-valin.fr/RJVALIN/wp-content/uploads/2026/03/image-3.png" style="width:120px;height:120px;border-radius:50%;">
+<div>Découvrir le BTS BioALC</div>
 </div>
-</section>
 
-<section>
-<h2 style="font-size:1.3rem;margin:40px 0 12px">Respect du RGPD et des données des élèves</h2>
-<p>Les copies sont traitées sur votre appareil, dans le navigateur : les devoirs des élèves ne sont pas envoyés sur un serveur.</p>
-</section>
+<!-- TON SCRIPT COMPLET CONSERVÉ -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
-<section>
-<h2 style="font-size:1.3rem;margin:40px 0 12px">Comment ça marche ?</h2>
-<ol style="padding-left:22px">
-<li>Dans Moodle, téléchargez tous les travaux remis d'un devoir.</li>
-<li>Ouvrez l'appli et déposez l'archive.</li>
-<li>Corrigez les copies au stylet.</li>
-<li>Téléchargez l'archive des copies corrigées et déposez-la dans Moodle.</li>
-</ol>
-<p>Un exemple d'entraînement est intégré pour essayer l'appli sans vraies copies.</p>
-</section>
+if (window.matchMedia("(max-width: 768px)").matches) {
+document.getElementById("popup")?.remove();
+document.getElementById("popupLabel")?.remove();
+return;
+}
 
-<section>
-<h2 style="font-size:1.3rem;margin:40px 0 12px">Pour qui ?</h2>
-<p>Pour les enseignants qui utilisent Moodle, quelle que soit leur discipline. L'appli est née au lycée Valin, dans les enseignements de biotechnologies. Interface disponible en 4 langues.</p>
-</section>
+const popup = document.getElementById("popup");
+const label = document.getElementById("popupLabel");
 
-<section>
-<h2 style="font-size:1.3rem;margin:40px 0 12px">Un commun numérique éducatif</h2>
-<p>L'appli est publiée sur la Forge des communs numériques éducatifs, sous licence CC BY-NC-SA 4.0 (Wilfrid Grossin). Vous pouvez l'utiliser, la partager et l'adapter dans un cadre non commercial.</p>
-<a style="display:inline-block;margin:20px 0 8px;padding:16px 32px;border-radius:12px;background:#1f5fbf;color:#fff;font-size:1.2rem;font-weight:700;text-decoration:none" href="https://grossinwilfrid.forge.apps.education.fr/fusion-rendus-moodle/">Ouvrir l'appli</a>
-</section>
+function setCookie(name, value, days) {
+const d = new Date();
+d.setTime(d.getTime() + (days*24*60*60*1000));
+document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+}
 
-<footer style="margin-top:48px;padding-top:16px;border-top:1px solid #e2e6ef;font-size:.9rem;color:#55607a">
-<p>Des devoirs rendus aux copies corrigées, par Wilfrid Grossin, lycée Valin. Licence CC BY-NC-SA 4.0.</p>
-<p><a style="color:#1f5fbf" href="https://wilfrid-grossin.github.io/BTSBioALC-Lycee-Valin/">Retour au site GitHub</a></p>
-</footer>
-</main>
+function getCookie(name) {
+const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+return match ? match[2] : null;
+}
+
+const probability = 0.3;
+const minDays = 2;
+const lastSeen = getCookie("popup_last");
+const now = Date.now();
+
+let showPopup = false;
+
+if (!lastSeen) {
+showPopup = true;
+} else if (now - lastSeen > minDays*24*60*60*1000) {
+showPopup = Math.random() < probability;
+}
+
+if (showPopup) {
+
+popup.style.display = "flex";
+label.style.display = "block";
+
+setTimeout(() => {
+popup.remove();
+label.remove();
+}, 5000);
+
+setCookie("popup_last", now, 30);
+
+} else {
+popup.style.display = "none";
+label.style.display = "none";
+}
+
+});
+</script>
+
 </body>
 </html>
