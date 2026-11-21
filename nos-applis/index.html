@@ -140,7 +140,7 @@ html{scroll-behavior:smooth}
 .toc .sub a:hover{color:var(--brand)}
 .toc-shade{position:fixed;inset:0;z-index:55;background:rgba(10,20,40,.35);opacity:0;pointer-events:none;transition:opacity .25s}
 .toc-shade.open{opacity:1;pointer-events:auto}
-@media (max-width:760px){.toc-btn{top:auto;bottom:18px;width:46px;height:44px}.toc-tip{display:none}}
+@media (max-width:1024px){.toc-btn{top:12px;left:auto;right:0;width:46px;height:44px;border-left:1px solid var(--line);border-right:0;border-radius:22px 0 0 22px}.toc-tip{display:none}.toc{left:auto;right:0;border-right:0;border-left:1px solid var(--line);transform:translateX(105%);box-shadow:-8px 0 30px rgba(16,32,64,.18)}.toc.open{transform:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toc,.toc-shade{transition:none}}
 @media print{.toc-btn,.toc,.toc-shade{display:none}}
 .apps{margin-top:-36px;position:relative;z-index:2}
